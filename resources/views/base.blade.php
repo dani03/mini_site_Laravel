@@ -8,11 +8,10 @@
     <title>laravel 8</title>
 </head>
 <body>
-    <h1> bonjour depuis paris...</h1>
-    <h3 class="bjr">heure locale {{ date('h:i A d/m/Y  ')}}</h3>
+   @yield('contenu')
 
     <footer>
-        <span>&copy; Copyright {{ date('Y')}} &middot; <a href="/apropos">A propos.</a> </span>
+        <span>&copy; Copyright {{ date('Y')}}  @yield('foot') </span>
     </footer>
 </body>
 </html>
