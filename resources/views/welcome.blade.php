@@ -12,7 +12,7 @@
     <h3 class="bjr">heure locale {{ date('h:i A d/m/Y  ')}}</h3>
 
     <footer>
-        <span>&copy; Copyright {{ date('Y')}} &middot; </span>
+        <span>&copy; Copyright {{ date('Y')}} &middot; <a href="/apropos">A propos.</a> </span>
     </footer>
 </body>
 </html>
