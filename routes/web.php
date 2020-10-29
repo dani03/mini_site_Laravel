@@ -16,11 +16,11 @@ use App\Http\Controllers\TestController;
 
 Route::get('/', function () {
     return view('/pages/welcome');
-});
+})->name("vers-home");
 
 Route::get('/apropos', function () {
 
     return view('/pages/apropos');
-});
+})->name("vers-about");
 
-Route::get('/test', [TestController::class, 'home']);
+Route::get('/test', [TestController::class, 'home'])->name("vers-test");
