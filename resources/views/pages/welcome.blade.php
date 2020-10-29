@@ -1,4 +1,5 @@
 @extends('base')
+@section('title', 'acceuil | ' . config('app.name'))
 
 @section('contenu')
     <h1> bonjour depuis paris...</h1>
@@ -6,5 +7,5 @@
 @endsection
 
 @section('foot')
-&middot; <a href="/apropos">A propos.</a> </span>    
-@endsection
+    &middot;  <a href="/apropos">A propos.</a> </span>    
+@stop
