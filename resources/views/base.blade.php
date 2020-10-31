@@ -9,9 +9,12 @@
 </head>
 <body>
    @yield('contenu')
-    {{config("app.name")}}
+   
     <footer>
-        <span>&copy; Copyright {{ date('Y')}}  @yield('foot') </span>
+     &copy; Copyright {{ date('Y')}}
+        @if (!Route::is('vers-about'))
+            <a href="{{ Route('vers-about')}}">a propos</a>    
+        @endif
     </footer>
 </body>
 </html>
