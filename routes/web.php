@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\TestController;
 
 /*
@@ -14,12 +15,9 @@ use App\Http\Controllers\TestController;
 |
 */
 
-Route::get('/', function () {
-    return view('/pages/welcome');
-})->name("vers-home");
+Route::get('/', [HomeController::class, 'welcome'])->name('vers-home');
 
 Route::get('/apropos', function () {
-
     return view('/pages/apropos');
 })->name("vers-about");
 
